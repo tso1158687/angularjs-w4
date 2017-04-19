@@ -26,7 +26,7 @@
             })
             .state("itemDetail", {
                 url: "/item-detail/{itemId}",
-                templateUrl: "/src/router/itemsdetail.html",
+                templateUrl: "src/router/itemsdetail.html",
                 controller: "itemDetailStateController as itemDetailState",
                 resolve: {
                     item: ["$stateParams", "MenuDataService", function($stateParams, MenuDataService) {
